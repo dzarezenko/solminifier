@@ -10,7 +10,11 @@ const main = (solFilePath, errorsJSONPath) => {
 
   solContent = `// SPDX-License-Identifier: MIT\n\n${solContent}`;
 
-  solContent = solContent.replace(/[\r\n]+/g, '\n');
+  solContent = solContent
+    .split("\n")
+    .map(e => e.trimEnd())
+    .join("\n")
+    .replace(/[\r\n]{4,}/g, '\n');
 
   fs.writeFileSync(
     solFilePath.substring(0, solFilePath.length - 4) + ".min.sol",
