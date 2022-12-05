@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "npx hardhat clean && npx hardhat compile",
-    "build": "rm -rf ./artifacts/dist/ && sol-merger -c \"./contracts/**/*.sol\" ./artifacts/dist/"
+    "build": "rm -rf ./artifacts/dist/ && sol-merger -c \"./contracts/**/*.sol\" ./artifacts/dist/",
+    "minify": "node ./solminifier.js ./artifacts/dist/SimpleToken.sol ./contracts/errors.json"
   },
   "repository": {
     "type": "git",
