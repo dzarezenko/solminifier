@@ -15,6 +15,20 @@
   "A8": "Address: delegate call to non-contract",
   "A9": "Address: low-level delegate call failed",
 
+  "I1": "Initializable: contract is already initialized",
+  "I2": "Initializable: contract is not initializing",
+  "I3": "Initializable: contract is initializing",
+
+  "U1": "ERC1967: new implementation is not a contract",
+  "U2": "ERC1967Upgrade: unsupported proxiableUUID",
+  "U3": "ERC1967Upgrade: new implementation is not UUPS",
+  "U4": "ERC1967: new admin is the zero address",
+  "U5": "ERC1967: new beacon is not a contract",
+  "U6": "ERC1967: beacon implementation is not a contract",
+  "U7": "Function must be called through delegatecall",
+  "U8": "Function must be called through active proxy",
+  "U9": "UUPSUpgradeable: must not be called through delegatecall",
+
   "ERC20_1": "ERC20: decreased allowance below zero",
   "ERC20_2": "ERC20: transfer from the zero address",
   "ERC20_3": "ERC20: transfer to the zero address",
@@ -29,6 +43,32 @@
   "ERC20_12": "SafeERC20: decreased allowance below zero",
   "ERC20_13": "SafeERC20: permit did not succeed",
   "ERC20_14": "SafeERC20: low-level call failed",
-  "ERC20_15": "SafeERC20: ERC20 operation did not succeed"
+  "ERC20_15": "SafeERC20: ERC20 operation did not succeed",
+
+  "ERC721_1": "ERC721: address zero is not a valid owner",
+  "ERC721_2": "ERC721: invalid token ID",
+  "ERC721_3": "ERC721: approval to current owner",
+  "ERC721_4": "ERC721: approve caller is not token owner or approved for all",
+  "ERC721_5": "ERC721: caller is not token owner or approved",
+  "ERC721_6": "ERC721: transfer to non ERC721Receiver implementer",
+  "ERC721_7": "ERC721: mint to the zero address",
+  "ERC721_8": "ERC721: token already minted",
+  "ERC721_9": "ERC721: transfer from incorrect owner",
+  "ERC721_10": "ERC721: transfer to the zero address",
+  "ERC721_11": "ERC721: approve to caller",
+  "ERC721_12": "ERC721: invalid token ID",
+
+  "ERC1155_1": "ERC1155: address zero is not a valid owner",
+  "ERC1155_2": "ERC1155: accounts and ids length mismatch",
+  "ERC1155_3": "ERC1155: caller is not token owner or approved",
+  "ERC1155_4": "ERC1155: transfer to the zero address",
+  "ERC1155_5": "ERC1155: insufficient balance for transfer",
+  "ERC1155_6": "ERC1155: ids and amounts length mismatch",
+  "ERC1155_7": "ERC1155: mint to the zero address",
+  "ERC1155_8": "ERC1155: burn from the zero address",
+  "ERC1155_9": "ERC1155: burn amount exceeds balance",
+  "ERC1155_10": "ERC1155: setting approval status for self",
+  "ERC1155_11": "ERC1155: ERC1155Receiver rejected tokens",
+  "ERC1155_12": "ERC1155: transfer to non-ERC1155Receiver implementer"
 
 }
