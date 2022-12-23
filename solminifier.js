@@ -5,7 +5,7 @@ const main = (solFilePath, errorsJSONPath) => {
   let errors = require(errorsJSONPath);
 
   for (let errCode in errors) {
-    solContent = solContent.replace(errors[errCode], errCode);
+    solContent = solContent.replaceAll(errors[errCode], errCode);
   }
 
   solContent = `// SPDX-License-Identifier: MIT\n\n${solContent}`;
